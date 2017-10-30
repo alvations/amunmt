@@ -28,3 +28,4 @@ WORKDIR $MARIANPATH
 RUN mkdir -p build
 WORKDIR $MARIANPATH/build
 RUN cmake $MARIANPATH && make -j
+RUN make python
